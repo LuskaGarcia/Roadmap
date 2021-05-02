@@ -1,0 +1,37 @@
+##CSS GRID
+
+###GRID
+-Bimensional
+-Divisão de toda a página em linhas e colunas
+-Colocar elementos onde quiser nessa divisão
+
+______
+
+#GRID OU FLEXBOX
+-Grid: Duas dimensões (colunas e linhas)
+-Flexbox: Uma dimensão (ou coluna ou linha)
+-Um complementa o trabalho do outro
+-Verificar quais navegadores ainda não estão aceitando o Grid
+
+##PROPRIEDADES
+Vamos separar em 2 grupos: container e item(s)
+
+###CONTAINER
+-display: grid;
+-grid-template-columns; (Qntd de colunas da pagina)
+-grid-template-rows; (Qntd de linhas)
+-grid-gap (espaçamentos)
+-grid-row-gap
+-grid-column-gap
+-grid-template-areas; (delimitar areas)
+... e mais 4 propriedades e alinhamento!
+
+####ITEM(s)
+-grid-column (onde fica o o elemento na nossa coluna)
+-grid-column-start
+-grid-column-end
+-grid-row (onde fica o elemento na nossa linha)
+-grid-row-start
+-grid-row-end
+-grid-area
+... e mais 2 propriedades de alinhamento!

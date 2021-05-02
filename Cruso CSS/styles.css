@@ -1,0 +1,158 @@
+/* .segundo-h1 { /*Selecinar a classe é só o ponto*/
+    /*color: red;
+/*}
+
+/*classe eu uso pra personalizar mais de 1 elemento, id só quando é 1 especifico*/
+
+/*#primeiro-h1 { /*Selecinar o id é só o #*/
+ /*   color: blue;
+/*}*/
+
+* { /*Todos os elementos vao ter esse comportamento*/
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+
+}
+
+.box{
+    width: 80%;
+    margin:auto;
+}
+
+.container {
+    background-color: #333;
+    color: #eee;
+    width: 80%;
+    /*box-sizing:border-box vai deixar responsível e ter a largura exata do elemento sem influenciar as outras*/
+    margin: auto; /*Espaço fora do conteudo*/
+    padding: 20px; /*Espaço dentro do conteudo p/borda, posso usar tanto só ele pra aplicar em todas,
+    ou usar especifico (top,right, left, bottom)*/
+    border: 3px solid red; 
+}
+
+.main-aside h2{
+    text-align: center;
+}
+
+.main-aside ul{
+    list-style: none; 
+    text-align: center;
+    padding: 0; /* lista vem com padding por padrao, ai aqui a gente tira*/
+}
+
+.main-aside ul a {
+    text-decoration: none;
+}
+
+.main-aside ul a:hover{ /*Hover deixa estilizar o que acontece quando passa o mouse por cima*/
+    color:red;
+    cursor:pointer;
+}
+
+.main-aside ul a:visited{
+    color:green;
+}
+
+/*Formularios*/
+
+.main-form {
+    padding: 20px;
+}
+
+.main-form .form-group {
+    padding-bottom: 10px; /*posso usar margin aqui tbm que e o mesmo resultado*/
+}
+
+.main-form .form-group input{
+    padding: 5px;
+    width: 100% ;
+
+}
+
+.main-form .form-group label{
+    display: block;
+}
+
+.button {
+    padding: 15px; /*ctrl D seleciona mais de 1 valor igual pra mudar*/
+    background-color: #333;
+    color: #eee;
+    border: none;
+}
+
+/*Positions*/
+
+.relative{
+    position: relative;
+    border: 3px solid #333;
+    height: 500px;
+    border-radius: 7px;
+
+}
+
+.relative .absolute {
+    position: absolute;
+    bottom: 0;
+
+}
+
+.relative .absolute h1 {
+    margin: 0;
+}
+
+/*Barra de navegação*/
+
+#main-navbar {
+    background: #333;
+    color: #eee;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: sticky;
+    top:0;
+}
+
+/*Fixed Button*/
+
+.fixed-button {
+    background: #333;
+    color: #eee;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+/*Categorias*/
+
+/*.categorias ul {
+    list-style: none;
+}
+
+.categorias ul li:first-child {
+    color: red;
+}
+
+.categorias ul li:last-child {
+    color: green;
+}
+
+.categorias ul li:nth-child(3){
+    color: blue;
+} */
+
+.categorias ul li:nth-child(even){ /*Apenas os pares*/
+    color: red;
+}
+
+.categorias ul li:nth-child(odd){ /*Apenas os impares*/
+    color: pink;
+}
